@@ -1,0 +1,42 @@
+.center-text {
+    text-align: center;
+}
+
+.font {
+    font-family: Marker Felt, fantasy;
+}
+
+.headline {
+    text-align: center;
+    font-family: Marker Felt, fantasy;
+}
+
+.logo-conditions {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 10;
+    left: 10
+}
+
+.header-color {
+    background: #1494a0;
+}
+
+.background_color {
+    background-color: #b3d8f2;
+}
+
+.top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.button-box {
+    width: 100%;
+    padding: 20px;
+    box-sizing: content-box;
+    text-align: center;
+}
