@@ -20,11 +20,11 @@
 }
 
 .header-color {
-    background: #1494a0;
+    background: #ffffff;
 }
 
 .background_color {
-    background-color: #b3d8f2;
+    background-color: #ffffff;
 }
 
 .top-left {
@@ -39,4 +39,23 @@
     padding: 20px;
     box-sizing: content-box;
     text-align: center;
+    background-color: #214530;
+    position: absolute;
+    left: 0;
+}
+
+.navigation-buttons {
+    border: none;
+    transition: transform 0.3s ease;
+    font-size: 30px;
+    border-radius: 5px;
+    margin: 5px 100px;
+    background-color: #214530;
+    border-color: #214530;
+    color:#ffffff;
+    
+}
+
+.navigation-buttons:hover {
+    transform: scale(1.1);
 }
