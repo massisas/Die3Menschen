@@ -343,64 +343,11 @@ footer {
   margin-bottom: 20px;
 }
 
-.map-box {
-  border: 2px solid var(--green-dark);
-}
-
-.map-box img {
-  width: 100%;
-  display: block;
-}
-
-.contact-info h3,
-.contact-info h4,
-.route-description h3,
-.info-box h3 {
-  color: var(--green-dark);
-  font-family: "Segoe Print", "Comic Sans MS", cursive;
-  margin: 0 0 10px;
-}
-
-.route-description {
-  border: 2px solid var(--green-dark);
-  padding: 15px;
-  margin-bottom: 20px;
-}
-
-.contact-boxes {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  margin-bottom: 30px;
-}
-
-.info-box {
-  border: 2px solid var(--green-dark);
-  padding: 15px;
-}
-
-.social-contact {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  font-size: 4rem;
-  color: var(--green-dark);
-  margin: 30px 0;
-}
-
 @media (max-width: 700px) {
-  .contact-top,
-  .contact-boxes {
+  .contact-top {
     grid-template-columns: 1fr;
   }
-
-  .social-contact {
-    font-size: 3rem;
-    gap: 25px;
-  }
 }
-
-
 
 
 @media (max-width: 620px) {
