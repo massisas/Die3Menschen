@@ -1,38 +1,172 @@
 <!DOCTYPE html>
 <html lang="de">
-    <header > <img class="logo-conditions" src="Images/Logo.png" alt="Logo"> <br>
-    <h1 class="headline">Tierheim Sonnenplatz - e.V</h1> <h2 class="headline">wo Hoffnung ein Zuhause findet</h2> <br>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Anfrageformular Tierheim Sonnenplatz e.V.">
+  <link rel="icon" type="image/png" href="Images/logo.png">
+  <title>Anfragen | Tierheim Sonnenplatz e.V.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+
+    <div class="top-strip">
+      <a href="tel:+490000000000">+4900000000000</a>
+      <span aria-hidden="true">|</span>
+      <a href="mailto:info@tierheim-sonnenplatz.de">info@tierheim-sonnenplatz.de</a>
+    </div>
+
+    <header class="site-header">
+      <a class="brand-mark" href="home.html" aria-label="Tierheim Sonnenplatz – Startseite">
+        <img src="Images/logo.png" alt="Tierheim Sonnenplatz Logo">
+      </a>
+
+      <div class="brand-copy">
+        <h1>Tierheim Sonnenplatz e.V.</h1>
+        <p class="slogan">
+          <span class="slogan-heart">♡</span>
+          Wo Hoffnung ein Zuhause findet
+        </p>
+      </div>
+
+      <div class="header-decoration" aria-hidden="true"></div>
     </header>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tierheim Sonnenplatz - e.V – wo Hoffnung ein Zuhause findet </title>
-    <link rel="stylesheet" href="style.css">
+    <nav class="main-nav" aria-label="Hauptnavigation">
+      <a href="home.html">Home</a>
+      <a href="anfragen.html">Anfragen</a>
+      <a href="vermittlung.html">Vermittlung</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="news.html">News</a>
+    </nav>
 
-    <body class="background_color">
-        <br>
-            <div class="button-box">
-                <a href="test.html" >
-                <button class="navigation-buttons" >Home</button>
-                </a>
-                <a href="anfragen.html" >
-                <button class="navigation-buttons">Anfragen</button>
-                </a>
-                <a href="vermittlung.html" >
-                <button class="navigation-buttons">Vermittlung</button>
-                </a>
-                <a href="kontakt.html" >
-                <button class="navigation-buttons">Kontakt</button>
-                </a>
-                <a href="news.html" >
-                <button class="navigation-buttons">News</button>
-                </a>
-            </div>
-        
-        
-        
-        
-        
-        
-        </body>
+    <main>
+
+        <section class="form-section">
+            <h2>Zum Tier</h2>
+            <form>
+                <label for="tiername">Name des Tieres</label>
+                <input type="text" id="tiername" name="tiername" required>
+                <label for="erwartungen">Welche Erwartungen haben Sie?</label>
+                <textarea id="erwartungen" name="erwartungen" rows="6"></textarea>
+
+                <h2>Persönliche Daten</h2>
+                <div class="name-row">
+                    <div>
+                        <label for="nachname">Name</label>
+                        <input type="text" id="nachname" name="nachname" required>
+                    </div>
+
+                    <div>
+                        <label for="vorname">Vorname</label>
+                        <input type="text" id="vorname" name="vorname" required>
+                    </div>
+
+                    <div>
+                        <label for="alter">Alter</label>
+                        <input type="number" id="alter" name="alter" required>
+                    </div>
+
+                </div>
+
+                <label for="telefon">Telefonnummer</label>
+                <input type="tel" id="telefon" name="telefon" required>
+
+                <label for="email">E-Mail</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="bundesland">Bundesland </label>
+                <input type="text" id="bundesland" name="bundesland" required>
+
+                <label for="adresse">Straße, Hausnummer</label>
+                <input type="text" id="adresse" name="adresse">
+                <label for="plzort">PLZ, Ort</label>
+                <input type="text" id="plzort" name="plzort">
+
+
+                <label for="beruf">Beruf, Arbeitszeit</label>
+                <input type="text" id="beruf" name="beruf">
+
+
+                <h2>Wohnsituation</h2>
+
+                <label for="umgebung">Umgebung (Stadt, Land etc.) </label>
+                <input type="text" id="umgebung" name="umgebung" required>
+
+                <label for="wohnen">Sie wohnen in einer Wohnung/Etage/Haus</label>
+                <input type="text" id="wohnen" name="wohnen" required>
+
+                <label for="vermieter">Schriftliche Bestätigung des Vermieters vorhanden? </label>
+                <select id="vermieter" name="vermieter" required>
+                    <option value="">Bitte wählen</option>
+                    <option>Ja</option>
+                    <option>Nein</option>
+                </select>
+
+                <label for="garten">Falls Garten vorhanden, wie hoch eingezäunt? </label>
+                <input type="text" id="garten" name="garten" required>
+
+                <label for="personen">Anzahl Personen im Haushalt </label>
+                <input type="number" id="personen" name="personen" required>
+                <label for="kinder">Davon Kinder </label>
+                <input type="number" id="kinder" name="kinder" required>
+                <label for="alterkinder">Alter der Kinder </label>
+                <input type="text" id="alterkinder" name="alterkinder" required>
+
+                <label for="vorbesitz">Gab es Vorbesitz?  Falls ja, gestorben, verschwunden oder abgegeben?</label>
+                <textarea id="vorbesitz" name="vorbesitz"></textarea>
+
+                <label for="unterbringung">Wo soll das Tier ständig untergebracht werden? </label>
+                <input type="text" id="unterbringung" name="unterbringung" required>
+
+                <label for="alleine">Wie viele Stunden täglich alleine? </label>
+                <input type="text" id="alleine" name="alleine" required>
+
+                <label for="haustiere">Welche Tiere leben im Haushalt? </label>
+                <textarea id="haustiere" name="haustiere" required></textarea>
+
+                <label for="kastriert">Welche Tiere sind kastriert? </label>
+                <textarea id="kastriert" name="kastriert" required></textarea>
+
+                <label for="urlaub">Wo befindet sich das Tier bei Urlaub/Abwesenheit?</label>
+                <textarea id="urlaub" name="urlaub"></textarea>
+
+
+                <h2>Einverständniserklärung</h2>
+                <div class="consent">
+                    <input type="checkbox" id="einverstaendnis" required>
+                    <label for="einverstaendnis">
+                        Sie erklären sich damit einverstanden, dass Ihre Daten zum Zwecke der Vermittlung von Hunden verwendet werden.
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-button">Senden</button>
+
+            </form>
+        </section>
+
+    </main>
+    
+    <footer id="kontakt">
+
+      <div class="footer-links">
+        <a impressum.html="#impressum">› Impressum</a>
+        <a datenschutz.html="#datenschutz">› Datenschutz</a>
+        <a faq.html="#faq">› FAQ</a>
+      </div>
+
+      <div class="footer-bottom">
+        <small>© 2026 Tierheim Sonnenplatz e.V.</small>
+
+        <div class="social-links" aria-label="Social Media">
+          <a href="#" aria-label="Instagram">◎</a>
+          <a href="#" aria-label="TikTok">♪</a>
+          <a href="#" aria-label="YouTube">▷</a>
+        </div>
+      </div>
+
+    </footer>
+  </div>
+</body>
 </html>
