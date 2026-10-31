@@ -436,3 +436,115 @@ footer {
     font-size: 1.2rem;
   }
 }
+
+
+/* faq css */
+.faq {
+  --faq-bg: #204631;
+  --faq-border: #000000;
+  --faq-text: #0000000;
+  --faq-muted: #4b654d;
+  --faq-accent: #7c9160;
+  --faq-hover: #f4f6fa;
+
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  .faq {
+    --faq-bg: #204631;
+    --faq-border: #000000;
+    --faq-text: #ffffff;
+    --faq-muted: #ffffff;
+    --faq-accent: #7c9160;
+    --faq-hover: #204631;
+  }
+}
+
+.faq-item {
+  background: var(--faq-bg);
+  border: 1px solid var(--faq-border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.faq-item h3 {
+  margin: 0;
+  font: inherit;
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 20px;
+  background: none;
+  border: 0;
+  font: inherit;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-align: left;
+  color: var(--faq-text);
+  cursor: pointer;
+  transition: background-color .2s ease;
+}
+
+.faq-question:hover {
+  background: var(--faq-hover);
+}
+
+.faq-question:focus-visible {
+  outline: 2px solid var(--faq-accent);
+  outline-offset: -2px;
+}
+
+.faq-icon {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  color: var(--faq-accent);
+  transition: transform .3s ease;
+}
+
+.faq-item.is-open .faq-icon {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  display: grid;
+  grid-template-rows: 0fr;
+  visibility: hidden;
+  transition: grid-template-rows .3s ease, visibility 0s linear .3s;
+}
+
+.faq-item.is-open .faq-answer {
+  grid-template-rows: 1fr;
+  visibility: visible;
+  transition: grid-template-rows .3s ease, visibility 0s;
+}
+
+.faq-answer-inner {
+  overflow: hidden;
+}
+
+.faq-answer-inner p {
+  margin: 0;
+  padding: 0 20px 20px;
+  line-height: 1.6;
+  color: var(--faq-muted);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .faq-icon,
+  .faq-answer,
+  .faq-item {
+    transition: none;
+  }
+}
