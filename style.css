@@ -548,3 +548,214 @@ footer {
     transition: none;
   }
 }
+
+/* ===== ===== ===== Sven'sche Zone ===== ===== ===== */
+
+/* ===== Vermittlung (später harmonisieren?) ===== */
+ 
+/* Aktive Seite */
+.main-nav a[aria-current="page"] {
+  background: var(--green);
+  padding: 4px 18px;
+}
+ 
+/* Auswahl Tierart*/
+.pet-tabs {
+  display: flex;
+  gap: 8px;
+  margin: 0 0 22px;
+}
+ 
+.pet-tabs a {
+  padding: 2px 4px 4px;
+  color: var(--green-dark);
+  font-family: "Segoe Print", "Comic Sans MS", cursive;
+  font-size: 1.45rem;
+  font-weight: 600;
+  border-bottom: 3px solid transparent;
+}
+ 
+.pet-tabs a:hover {
+  border-bottom-color: var(--green-light);
+}
+ 
+.pet-tabs a[aria-current="true"] {
+  border-bottom-color: var(--green-light);
+}
+ 
+/* Grid mit Tierkarten */
+.pet-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+ 
+.pet-card {
+  padding: 8px;
+  background: var(--white);
+  border: 1px solid #e4e1d4;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 6%);
+}
+ 
+.pet-photo { /* Overflow hidden for the crop setup */
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: #fff;
+  border: 2px solid #111;
+}
+ 
+.pet-photo img { /* object-fit cover sets it to crop instead of distort */
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Alternatively you get weird stuff and have to crop manually */
+  display: block;
+}
+ 
+.pet-name {
+  margin: 8px 0 2px;
+  color: var(--green-dark);
+  font-family: "Segoe Print", "Comic Sans MS", cursive; /* Gott erhielt: comic sans */
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+ 
+.pet-meta,
+.pet-age {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+ 
+.pet-meta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+ 
+.pet-dot {
+  font-size: 0.55rem;
+}
+ 
+.pet-more {
+  display: block;
+  margin-top: 8px;
+  padding: 8px 10px;
+  background: var(--green-dark);
+  color: var(--white);
+  text-align: center;
+  font-family: "Segoe Print", "Comic Sans MS", cursive;
+  font-size: 0.85rem;
+  transition: opacity 0.2s ease;
+}
+ 
+.pet-more:hover {
+  opacity: 0.9;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+ 
+/* Die drei Punkte unten */
+.pet-more-indicator {
+  margin: 14px 0 0;
+  text-align: center;
+  color: var(--green-dark);
+  font-size: 2rem;
+  line-height: 1;
+}
+
+/* ===== News ===== */
+
+/* Reuses from Vermittlung where possible */
+
+.news-title {
+  margin: 0 0 16px;
+  color: var(--green-dark);
+  font-family: "Segoe Print", "Comic Sans MS", cursive; /* t'hee */
+  font-size: 1.8rem;
+}
+
+.event {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  padding: 14px;
+  background: var(--white);
+  border: 1px solid #e4e1d4;
+}
+
+/* Kasten mit Datum etc. */
+.event-date {
+  flex-shrink: 0;
+  width: 70px;
+  border: 2px solid var(--green-dark);
+  text-align: center;
+  font-family: "Segoe Print", "Comic Sans MS", cursive;
+}
+
+.event-date span {
+  display: block;
+  padding: 2px;
+  background: var(--white);
+  font-weight: 700;
+}
+
+.event-date strong {
+  display: block;
+  padding: 6px 2px;
+  border-top: 2px solid var(--green-dark);
+  border-bottom: 2px solid var(--green-dark);
+  color: var(--green-light);
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.event-date small {
+  display: block;
+  color: var(--text);
+  font-size: 0.8rem;
+}
+
+.event-body {
+  flex: 1;
+}
+
+.event-body h3 {
+  margin: 0;
+  color: var(--green-light);
+  font-family: "Segoe Print", "Comic Sans MS", cursive;
+  font-size: 1.4rem;
+}
+
+.event-time {
+  font-size: 0.8rem;
+}
+
+.event-body p {
+  margin: 4px 0;
+  line-height: 1.6;
+}
+
+.event-more {
+  display: block;
+  width: fit-content;
+  margin: 12px 0 0 auto;
+  padding: 6px 14px;
+  background: var(--green-dark);
+  color: var(--white);
+  font-family: "Segoe Print", "Comic Sans MS", cursive;
+  font-size: 0.85rem;
+}
+
+.event-more:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.more-dots {
+  margin: 0;
+  text-align: center;
+  color: var(--green-dark);
+  font-size: 2rem;
+  line-height: 1;
+}

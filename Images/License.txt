@@ -1,0 +1,27 @@
+FOR:
+
+Vogel.png (von mir)			| H. Zell 	// https://commons.wikimedia.org/wiki/File:Dromaius_novaehollandiae_-_R%C3%A9serve_africaine_de_Sigean_01.jpg
+Cristatella Mucedo.png (von mir)	| Lamiot 	// https://commons.wikimedia.org/wiki/File:Cristatella_mucedo_2014_11_10_a14.JPG
+
+Hund1					| Joliot	// https://commons.wikimedia.org/wiki/File:Chin_posing.jpg
+	- [Japan Chin]
+Hund2					| Jakub Hałun	// https://commons.wikimedia.org/wiki/File:20110425_German_Shepherd_Dog_8505.jpg
+	- G. Shepherd
+Hund3					| Liridon	// https://commons.wikimedia.org/wiki/File:Heterochromia_dog,_Struga.jpg
+	- ???
+Hund4					| André Karwath	// https://commons.wikimedia.org/wiki/File:Young_mixed-breed_dog_(aka).jpg
+	- Mischlingshund /  weißer Hirtenhund und ein deutscher Schäferhund
+Hund5					| Mostafameraji	// https://commons.wikimedia.org/wiki/File:Boxer_(dog)_,_Iran_08.jpg
+	- Boxer
+Hund6					| Slyronit	// https://commons.wikimedia.org/wiki/File:Beagle_eating_a_dog_cake.jpg
+	- Beagle
+
+-------- Katzen --------
+
+
+
+CC BY-SA 4.0
+
+https://creativecommons.org/licenses/by-sa/4.0/deed.en
+https://creativecommons.org/licenses/by-sa/4.0/deed.de
+
