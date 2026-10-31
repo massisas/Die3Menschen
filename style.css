@@ -759,3 +759,74 @@ footer {
   font-size: 2rem;
   line-height: 1;
 }
+
+/* ===== Tierseiten | Zurzeit nur eine weil ich nicht unendlich viel produzieren will ===== */
+
+.back-link { /* For the direct return link */
+  display: inline-block;
+  margin-bottom: 16px;
+  color: var(--green-dark);
+  font-family: "Segoe Print", "Comic Sans MS", cursive;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* Single box in the center; idk I like how it looks at least */
+
+
+.bio {
+  display: flex;
+  gap: 32px;
+  width: 900px;
+  margin: 0 auto 24px;
+  padding: 20px;
+  background: var(--white);
+  border: 1px solid #e4e1d4;
+}
+
+.bio-photo {
+  width: 360px;
+  height: 360px;
+  object-fit: cover;
+  border: 2px solid #111;
+}
+
+.bio-text h2 {
+  margin: 0 0 4px;
+  color: var(--green-dark);
+  font-family: "Segoe Print", "Comic Sans MS", cursive;
+  font-size: 2rem;
+}
+
+.bio-facts {
+  margin: 0 0 16px;
+}
+
+.bio-text h3 {
+  margin: 12px 0 4px;
+  color: var(--green-light);
+  font-family: "Segoe Print", "Comic Sans MS", cursive;
+  font-size: 1.2rem;
+}
+
+.bio-text p {
+  line-height: 1.6;
+}
+
+.bio-button {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 8px 16px;
+  background: var(--green-dark);
+  color: var(--white);
+  font-family: "Segoe Print", "Comic Sans MS", cursive;
+  font-size: 0.9rem;
+}
+
+.bio-button:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
