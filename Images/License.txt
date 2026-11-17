@@ -1,7 +1,7 @@
+Der Hund und die Katze der Startseite und auch der Hase der Kleintierseite sind eigene Bilder von Saskia Massi und haben somit keine Links
 FOR:
 
-Vogel.png (von mir)			| H. Zell 	// https://commons.wikimedia.org/wiki/File:Dromaius_novaehollandiae_-_R%C3%A9serve_africaine_de_Sigean_01.jpg
-Cristatella Mucedo.png (von mir)	| Lamiot 	// https://commons.wikimedia.org/wiki/File:Cristatella_mucedo_2014_11_10_a14.JPG
+Vogel.png       			| // https://i.pinimg.com/736x/3b/78/bc/3b78bc4c19184e7bf758091a0030da60.jpg
 
 Hund1					| Joliot	// https://commons.wikimedia.org/wiki/File:Chin_posing.jpg
 	- [Japan Chin]
@@ -26,8 +26,10 @@ Hund6					| Slyronit	// https://commons.wikimedia.org/wiki/File:Beagle_eating_a_
 
 Vogel2					| Vitor da Silva Gonçalves // https://en.wikipedia.org/wiki/File:Blue_australian_parakeet.jpg
 	- Blue Australian budgerigar
+
 Vogel3					| Giles Laurent	// https://en.wikipedia.org/wiki/File:015_Wild_Golden_Eagle_in_flight_at_Pfyn-Finges_(Switzerland)_Photo_by_Giles_Laurent.jpg
 	- Steinadler
+
 
 
 
