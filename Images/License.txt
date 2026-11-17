@@ -26,7 +26,8 @@ Hund6					| Slyronit	// https://commons.wikimedia.org/wiki/File:Beagle_eating_a_
 
 Vogel2					| Vitor da Silva Gonçalves // https://en.wikipedia.org/wiki/File:Blue_australian_parakeet.jpg
 	- Blue Australian budgerigar
-Vogel3					| 
+Vogel3					| Giles Laurent	// https://en.wikipedia.org/wiki/File:015_Wild_Golden_Eagle_in_flight_at_Pfyn-Finges_(Switzerland)_Photo_by_Giles_Laurent.jpg
+	- Steinadler
 
 
 
