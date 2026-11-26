@@ -671,7 +671,7 @@ footer {
 .news-title {
   margin: 0 0 16px;
   color: var(--green-dark);
-  font-family: "Segoe Print", "Comic Sans MS", cursive; /* t'hee */
+  font-family: "Segoe Print", "Comic Sans MS", cursive;
   font-size: 1.8rem;
 }
 
@@ -685,6 +685,7 @@ footer {
 }
 
 /* Kasten mit Datum etc. */
+
 .event-date {
   flex-shrink: 0;
   width: 70px;
@@ -693,7 +694,7 @@ footer {
   font-family: "Segoe Print", "Comic Sans MS", cursive;
 }
 
-.event-date span {
+.event-date > span {
   display: block;
   padding: 2px;
   background: var(--white);
@@ -736,28 +737,8 @@ footer {
   line-height: 1.6;
 }
 
-.event-more {
-  display: block;
-  width: fit-content;
-  margin: 12px 0 0 auto;
-  padding: 6px 14px;
-  background: var(--green-dark);
-  color: var(--white);
-  font-family: "Segoe Print", "Comic Sans MS", cursive;
-  font-size: 0.85rem;
-}
-
-.event-more:hover {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
-.more-dots {
-  margin: 0;
-  text-align: center;
-  color: var(--green-dark);
-  font-size: 2rem;
-  line-height: 1;
+.event-desc {
+  white-space: pre-line;          /* for making \n into a linebreak */
 }
 
 /* ===== Tierseiten | Zurzeit nur eine weil ich nicht unendlich viel produzieren will ===== */
