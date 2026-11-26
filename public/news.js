@@ -17,7 +17,8 @@ function formatEvent(e) { // e, lol
 
   const article = document.createElement('article'); // generates blank event template
   article.className = 'event';
-  article.innerHTML = 
+  article.innerHTML =                               // `s are safe when the data is known to be safe 
+                                                    // & real convenient!
  `
     <div class="event-date">
       <span class="ev-month"></span>
