@@ -43,7 +43,14 @@
 
     <main>
 
-      <a class="back-link" href="vermittlung.html">← Zurück zur Vermittlung</a>
+        <!-- Etwas komisch gemacht, damit es lokal funktioniert
+            das wirft einen zurück in die Seite, von denen man herkam 
+            sollte eig. genau so funktionieren wie der Brower-Zurück-Button
+        -->
+
+      <a class="back-link" href="vermittlung.html"
+           onclick="if (history.length > 1) { history.back(); return false; }">
+           ← Zurück</a>
 
       <section class="bio">
         <img class="bio-photo" src="images/Hund1.jpg" alt="Foto von Fullbroadside">
