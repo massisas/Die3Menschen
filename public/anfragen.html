@@ -45,7 +45,7 @@
 
             <section class="form-section">
                 <h2>Zum Tier</h2>
-                <form>
+                <form id="anfrage-form">
                     <label for="tierart">Tierart</label>
                     <select id="tierart" name="tierart">
                         <option value="">Bitte wählen</option>
@@ -191,13 +191,14 @@
 
                     <h2>Einverständniserklärung</h2>
                     <div class="consent">
-                        <input type="checkbox" id="einverstaendnis" required>
+                        <input type="checkbox" id="einverstaendnis" name="einverstaendnis" required>
                         <label for="einverstaendnis">
                             Sie erklären sich damit einverstanden, dass Ihre Daten zum Zwecke der Vermittlung von Hunden verwendet werden.
                         </label>
                     </div>
 
                     <button type="submit" class="submit-button">Senden</button>
+                    <p id="status" role="status"></p>
 
                 </form>
             </section>
@@ -222,5 +223,31 @@
             </div>
         </footer>
     </div>
+    <script>
+        const form = document.getElementById('anfrage-form');
+        const status = document.getElementById('status');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();   // verhindert, dass die Seite neu lädt
+
+            const daten = Object.fromEntries(new FormData(form));
+            daten.einverstaendnis = form.einverstaendnis.checked;
+
+            status.textContent = 'Wird gesendet …';
+            try {
+                const res = await fetch('/api/anfragen', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(daten)
+                });
+                if (!res.ok) throw new Error('HTTP ' + res.status);
+                form.reset();
+                status.textContent = 'Danke! Ihre Anfrage ist bei uns angekommen.';
+            } catch {
+                status.textContent = 'Die Anfrage konnte leider nicht gesendet werden.';
+            }
+        });
+    </script>
 </body>
 </html>
+
